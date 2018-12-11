@@ -32,11 +32,11 @@ dataset.rename(columns={ dataset.columns[200]: "y" }, inplace=True) # rename不�
 
 部分分类的相关度分析heatmap如下：
 
-![corr_1](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification Schoolwork/img/corr_1.png)
+![corr_1](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification_Schoolwork/img/corr_1.png)
 
-![corr_2](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification Schoolwork/img/corr_2.png)
+![corr_2](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification_Schoolwork/img/corr_2.png)
 
-![corr_3](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification Schoolwork/img/corr_3.png)
+![corr_3](https://github.com/m-L-0/18b-Xu_An-2016-434/Classification_Schoolwork/img/corr_3.png)
 
 经分析相关度的heatmap可知，几乎所有的特征都与相关特征呈强烈的正相关或负相关性，所以在特征选择阶段不考虑剔除特征。剔除特征会有丢失信息的情况发生，经试验表明，剔除特征会导致准确率下降。
 
