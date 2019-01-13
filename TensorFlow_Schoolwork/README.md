@@ -142,6 +142,6 @@ for n in range(120):
 
 使用Matplotlib对搜索到的准确度进行绘制：
 
-![img_1](https://github.com/m-L-0/18b-Xu_An-2016-434/Tensorflow_Schoolwork/img_1.png)
+![img_1](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/TensorFlow_Schoolwork/img/img_1.png)
 
 通过图像可知，当n=29时，分类性能最佳。
