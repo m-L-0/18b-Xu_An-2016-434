@@ -17,9 +17,9 @@
 
 5. 迭代若干次后，当矩阵趋于稳定时，将结果转化为聚簇
 
-##二、项目具体实现过程
+## 二、项目具体实现过程
 
-###(一)  导入iris数据集
+### (一)  导入iris数据集
 
 在导入数据集时，使用sklearn自带的iris数据集作为原始数据集进行导入。
 
@@ -57,7 +57,7 @@ plt.plot()
 
 进行PCA降维后将原始四维空间数据映射到二维空间后的图像如图所示：
 
-![Classification Before MCL](./img/Classification Before MCL.png)
+![Classification Before MCL](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/Clustering%20Schoolwork/img/Classification%20Before%20MCL.png)
 
 ###(三) 相似度矩阵的求取
 
@@ -69,19 +69,19 @@ plt.plot()
 
    两个n维向量a(x11,x12,…,x1n)与 b(x21,x22,…,x2n)间的欧氏距离：
 
-![image-20181120173510787](./img/Euclidean Distance.png)
+![image-20181120173510787](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/Clustering%20Schoolwork/img/Euclidean%20Distance.png)
 
 2. **曼哈顿距离(Manhattan Distance)**
 
    标明两个点上在标准坐标系上的绝对轴距之总和：
 
-   ![image-20181120173611893](./img/Manhattan Distance.png)
+   ![image-20181120173611893](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/Clustering%20Schoolwork/img/Manhattan%20Distance.png)
 
 3. **马氏距离(Mahalanobis Distance)**
 
    有M个样本向量X1~Xm，协方差矩阵记为S，均值记为向量μ，则其中样本向量X到u的马氏距离表示为：
 
-   ![image-20181120174145547](./img/Mahalanobis Distance.png)
+   ![image-20181120174145547](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/Clustering%20Schoolwork/img/Mahalanobis%20Distance.png)
 
    我们选用**曼哈顿距离(Manhattan Distance)**作为相似度度量的方式：
 
@@ -296,7 +296,7 @@ plt.plot()
 
 进行降维后使用MCL进行聚类的结果如图所示：
 
-![Classification After MCL (Clustering Result)](./img/Classification After MCL (Clustering Result).png)
+![Classification After MCL (Clustering Result)](https://github.com/m-L-0/18b-Xu_An-2016-434/blob/master/Clustering%20Schoolwork/img/Classification%20After%20MCL%20(Clustering%20Result).png)
 
 ### (九) 聚类结果评估
 
@@ -327,7 +327,7 @@ print('The MCL accuracy is '+str(acc))
 
 膨胀算子是对每个样本进行乘方，以使得相似的样本值更加相似，而不同的样本的区别拉大。膨胀算子的取值会影响矩阵的收敛性和分簇的粒度。膨胀算子越大，得到的簇会越大，因为其会放大边之间的差距。
 
-###（二）调参策略
+### （二）调参策略
 
 使用**格点搜索法（grid search）**对参数进行选择，以达到最佳的聚类效果。
 
